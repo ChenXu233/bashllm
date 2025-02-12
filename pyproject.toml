@@ -1,0 +1,22 @@
+[project]
+name = "BashLLM"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "XuChenXu", email = "91937041+ChenXu233@users.noreply.github.com"},
+]
+dependencies = ["mkdocs>=1.6.1", "markdown-checklist>=0.4.4", "mkdocs-material>=9.6.4", "mkdocs-exclude-search>=0.6.6", "mkdocs-glightbox>=0.4.0", "pymdown-extensions>=10.14.3"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+mkdocs = "mkdocs serve"
