@@ -20,3 +20,4 @@ distribution = true
 
 [tool.pdm.scripts]
 mkdocs = "mkdocs serve"
+build = "mkdocs build"
